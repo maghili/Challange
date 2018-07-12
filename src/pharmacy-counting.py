@@ -1,4 +1,4 @@
-with open('de_cc_data.txt') as datafile:
+with open('../input/itcont.txt') as datafile:
     D=[line.rstrip('\n').split(',') for line in datafile]
 datafile.close()
 
