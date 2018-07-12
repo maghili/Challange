@@ -1,4 +1,4 @@
-with open('../input/itcont.txt') as datafile:#reading in the data
+with open('./input/itcont.txt') as datafile:#reading in the data
     D=[line.rstrip('\n').split(',') for line in datafile]
 
 D=D[1:len(D)]
@@ -17,6 +17,6 @@ f=open('output.txt', 'w')
 f.write('drug_name, count, total_cost')
 f.close()
 for data in drug_name_count_cost:
-    f = open('../output/top_cost_drug.txt','a')
+    f = open('./output/top_cost_drug.txt','a')
     f.write('\n'+str(data[0])+','+str(data[1])+','+str(data[2]))
 f.close()
