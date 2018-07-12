@@ -1,4 +1,4 @@
-with open('../input/itcont.txt') as datafile:
+with open('../input/itcont.txt') as datafile:#reading in the data
     D=[line.rstrip('\n').split(',') for line in datafile]
 
 D=D[1:len(D)]
@@ -12,8 +12,7 @@ for data in D:
 
 
 drug_name_count_cost.sort(key = lambda x: (x[-1],x[0]), reverse=True)
-#print drug_name_count_cost
-t1=time.time()
+#writing output in a file
 f=open('output.txt', 'w')
 f.write('drug_name, count, total_cost')
 f.close()
