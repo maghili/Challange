@@ -14,7 +14,7 @@ for data in D:
 drug_name_count_cost.sort(key = lambda x: (x[-1],x[0]), reverse=True)
 #writing output in a file
 f=open('output.txt', 'w')
-f.write('drug_name, count, total_cost')
+f.write('drug_name,num_prescriber,total_cost')
 f.close()
 for data in drug_name_count_cost:
     f = open('./output/top_cost_drug.txt','a')
