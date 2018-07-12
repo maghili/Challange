@@ -8,7 +8,7 @@ drug_name_count_cost = [[name, 0, 0] for name in names]
 for data in D:
     idx=names.index(data[3])
     drug_name_count_cost[idx][1] += 1
-    drug_name_count_cost[idx][2] = drug_name_count_cost[idx][2]+float(data[-1])
+    drug_name_count_cost[idx][2] = drug_name_count_cost[idx][2]+int(data[-1])
 
 
 drug_name_count_cost.sort(key = lambda x: (x[-1],x[0]), reverse=True)
