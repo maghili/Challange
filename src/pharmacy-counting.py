@@ -1,6 +1,5 @@
 with open('../input/itcont.txt') as datafile:
     D=[line.rstrip('\n').split(',') for line in datafile]
-datafile.close()
 
 D=D[1:len(D)]
 names = list(set([data[3] for data in D]))
