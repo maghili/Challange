@@ -2,11 +2,11 @@ with open('./input/itcont.txt') as datafile:#reading in the data
     D=[line.rstrip('\n').split(',') for line in datafile]
 
 D=D[1:len(D)]
-names = list(set([data[3] for data in D]))
+names = list(set([data[3] for data in D]))#list of unique drug names
 
 drug_name_count_cost = [[name, 0, 0] for name in names]
 for data in D:
-    idx=names.index(data[3])
+    idx=names.index(data[3])#index of name in the namelist the same as drug_name_count_cost
     drug_name_count_cost[idx][1] += 1
     drug_name_count_cost[idx][2] = drug_name_count_cost[idx][2]+int(data[-1])
 
