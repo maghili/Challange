@@ -1,3 +1,5 @@
 # Pharmacy-Counting
 
-The code takes the data, findes a set of unique drug names and then looks through the list and counts the occurance of each drug and the total cost of it.
+The code uses `set` to find the unique drug names and then creates a list that contains a list with the name of the drug, count of that drug and the acumulated price. Finally the result is being sorted and the values ase passed out to a textfile.
+This process has a O(n^3/2) time complexity.
+
